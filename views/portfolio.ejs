@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiran Vilozni Portfolio</title>
+  <!-- favicon -->
+  <link rel="icon" href="images/android-chrome-192x192.png">
+  <!-- jQuery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@200&family=Sacramento&display=swap" rel="stylesheet">
+  <!-- CSS stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- fontawsome cdn -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+  <!-- home section -->
+  <section class="colored-section" id="title">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link current" href="#title">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- header content -->
+    <div class="top-container container-fluid">
+      <div class="row">
+        <div class="col-sm" >
+          <img class="icons-home-section top-img " src="/static/images/js-format.png" alt="js-img" />
+          <h1>Shiran vilozni</h1>
+          <h2 class="section-title header-h2">A web devoloper</h2>
+          <img class="icons-home-section bottom-img " src="/static/images/css.png" alt="css-img">
+          <img class=" wheel-img " src="/static/images/settings.png" alt="gear-img">
+          <img class="idea-img " src="/static/images/idea.png" alt="idea-img">
+          <img class="header-pic " src="/static/images/programmer.png" alt="programmer-img" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section id="about">
+    <div class="middle-container container-fluid">
+      <div class="col-sm" >
+        <img id="profilePic" src="/static/images/תמונה לינקדאין-modified.png" alt="Profile Picture">
+        <h2 class="section-title">About Me</h2>
+        <div class="paragraph">
+          <p>I've completed Web Development Bootcamp by Dr. Angela Yu in Udemy.
+            In the course I've learned both Front-End & Back-End.
+            I've experience with are: HTML, CSS, JavaScript, React.js & Node.js.
+            I'm curious, creative & fast self-learner that
+            always want to get to know new things and improve my skills.
+          </p>
+        </div>
+        <button type="button" class="btn btn-info btn-lg portfolio-btn" href="#portfolio" name="portfolio-link">Portfolio</button>
+        <hr class="about-section-btn"> <button type="button" onclick="window.open('https://github.com/shiran-vil','_blank')" class="btn btn-outline-secondary btn-lg social-btn" name="github"><i class="fab fa-github"></i></button>
+        <button type="button" onclick="window.open('https://www.linkedin.com/in/shiran-vilozni-160284191/', '_blank')" class="btn btn-outline-secondary btn-lg social-btn" name="linkedin"><i class="fab fa-linkedin"></i></button>
+      </div>
+      <hr class="dotted">
+  </section>
+
+  <!-- portfolio section -->
+  <section class="colored-section" id="portfolio">
+    <div class="middle-container container-fluid">
+      <h2 class="section-title header-h2 ">Portfolio</h2>
+      <div class="card mb-3 card-body portfolio-elements-margin">
+        <img src="/static/images/example.png" class="card-img-top card-img-style" alt="wool-products-shop">
+        <div>
+          <h5 class="card-title header-h2 portfolio-elements-margin">Orly The Knitter shop</h5>
+          <p class="card-text">E-commerce website which exhibit hand-made wool products. I used <em>React.js </em> for the FE and <em>Node.js</em> for the BE.</p>
+          <p class="card-text"><small class="text-muted">Bonus Fact: the products knitted by me and my mom.</small></p>
+          <button type="button" name="wool-shop" onclick="window.open('https://github.com/shiran-vil','_blank')" class="btn btn-info btn-lg projects-btn">View Project</button>
+        </div>
+      </div>
+
+      <div class="card mb-3 card-body portfolio-elements-margin">
+        <img src="/static/images/example.png" class="card-img-top card-img-style" alt="...">
+        <div>
+          <h5 class="card-title header-h2 portfolio-elements-margin">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <button type="button" name="wool-shop" onclick="window.open('https://github.com/shiran-vil','_blank')" class="btn btn-info btn-lg projects-btn ">View Project</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- resume section -->
+  <section id="resume">
+    <div class=" skills container-fluid ">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-box">
+        <img class="img-responsive-work" src="/static/images/suitcase.png" alt="work-icon">
+        <h3 class="little-heading">Research Coordinator in BIU</h3>
+        <ul>
+          <li>Analyzing data in Excel & Power BI and making presentations of the data. </li>
+          <li>POC of QA of the Power Bi of the team.</li>
+          <li>Running pilot of building personal website for the researchers. </li>
+          <li>Maintenance of the Research Authority website.</li>
+          <li>Giving service to the researchers in subbimting proposals.</li>
+        </ul>
+        <p class="years-work"><small>2020-2021</small></p>
+      </div>
+      <div class="experience-box">
+        <img class="img-responsive-work" src="/static/images/suitcase.png" alt="work-icon">
+        <h3 class="little-heading">NOC Operator in Gav Systems</h3>
+        <ul>
+          <li>Responsibility on multiple systems that are operated on WINDOWS or LINUX servers: hardware issues, services, client servers, IPA gateway, reading logs etc.</li>
+          <li>Thorough learning of the systems architectures</li>
+          <li>Working with farm servers: VMWARE- operating the virtual servers, checking their connection. </li>
+          <li>Working with monitoring systems: CA Nimsoft- operation of the CA and with the monitoring servers farm (UIM). </li>
+          <li>Working with multiple software like SQL & SharePoint </li>
+        </ul>
+        <p class="years-work"><small>2017-2019</small></p>
+      </div>
+      <div class="experience-box">
+        <img class="img-responsive-work" src="/static/images/suitcase.png" alt="work-icon">
+        <h3 class="little-heading">Military Service
+          <small>Assistent at Prime Minister's Office- Major General Tech Unit</small>
+        </h3>
+        <ul>
+          <li>Making presentations.</li>
+          <li>Updating data in the systems.</li>
+          <li>Making appiontments</li>
+        </ul>
+        <p class="years-work"><small>2013-2015</small></p>
+      </div>
+      <h2 class="section-title"> Professional Knowledge & Education </h2>
+      <div class="experience-box">
+        <img class="img-responsive-work" src="/static/images/suitcase.png" alt="work-icon">
+        <h3 class="little-heading">Bar Ilan University</h3>
+        <p>BA in English linguistics and school counsling Studies. </p>
+        <p class="years-work"><small>2016-2019</small></p>
+      </div>
+      <div class="experience-box">
+        <img class="img-responsive-work" src="/static/images/suitcase.png" alt="work-icon">
+        <h3 class="little-heading">Udemy-The Complete 2022 Web Development Bootcamp</h3>
+        <label>Front-End</label>
+        <ul>
+          <li>HTML 5</li>
+          <li>CSS 3</li>
+          <li>Bootstrap 5</li>
+          <li>Javascript ES6</li>
+          <li>jQuery</li>
+          <li>Bash Command Line</li>
+          <li>Git, GitHub and Version Control</li>
+        </ul>
+        <label>Back-End</label>
+        <ul>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>APIs</li>
+          <li>MongoDB</li>
+          <li>Authentication</li>
+          <li>React.js</li>
+          <li>Server deployment</li>
+        </ul>
+        <p class="years-work"><small>2021-2022</small></p>
+      </div>
+      <div class="experience-box">
+        <img class="img-responsive-work" src="/static/images/suitcase.png" alt="work-icon">
+        <h3 class="little-heading">Campus IL Self.py</h3>
+        <ul>
+          <li>Data types</li>
+          <li>Loops & Conditionals</li>
+          <li>Lists</li>
+          <li>Functions</li>
+          <li>Files processing</li>
+        </ul>
+        <p class="years-work"><small>2020</small></p>
+      </div>
+      <div class="experience-box">
+        <img class="img-responsive-work" src="/static/images/suitcase.png" alt="work-icon">
+        <h3 class="little-heading">Wordpress from beginner to master by Andrew Williams</h3>
+        <ul>
+          <li>Building sites by types like a blog.</li>
+          <li>How to use themes & plugins.</li>
+          <li>How to manage the site by dashboard.</li>
+        </ul>
+        <p class="years-work"><small>2021</small></p>
+      </div>
+
+      <hr class="dotted">
+  </section>
+
+  <!-- contact section -->
+  <section id="contact" class="colored-section">
+    <div class="contact-me container-fluid">
+      <h2 class="section-title header-h2">Get In Touch</h2>
+      <div>
+        <button type="button" onclick="window.open('https://github.com/shiran-vil','_blank')" class="btn btn-outline-secondary btn-lg projects-btn" name="github"><i class="fab fa-github"></i></button>
+        <button type="button" onclick="window.open('https://www.linkedin.com/in/shiran-vilozni-160284191/', '_blank')" class="btn btn-outline-secondary btn-lg projects-btn" name="linkedin"><i class="fab fa-linkedin"></i></button>
+        <div>
+          <form id="contact-form" method="post" data-netlify="true" >
+            <div class="label-left">
+              <label>Name</label>
+            </div>
+            <div>
+              <input type="text" id="userName" name="name" value="" placeholder="Name" required autocomplete="off" class="form-entry">
+            </div>
+
+            <div class="label-left ">
+              <label>Email</label>
+            </div>
+            <div class="">
+              <input type="email" id="userEmail" name="email" value="" placeholder="Email" required autocomplete="off" class="form-entry">
+            </div>
+            <div class="label-left text-box">
+              <label>Message</label>
+            </div>
+            <div class="">
+              <textarea name="message" rows="3" cols="10" placeholder="Message" class="form-entry"></textarea>
+            </div>
+            <button type="submit" name="submit-cotact" class="form-entry btn btn-info btn-lg projects-btn">Submit</button>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+  <div class="bottom-container container-fluid">
+    <p class="copywriter">© 2022 Shiran Vilozni.</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      $('a').click(function() {
+        $('a.nav-link.current').removeClass("current");
+        $(this).addClass("current");
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
