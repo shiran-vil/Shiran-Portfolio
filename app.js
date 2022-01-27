@@ -1,15 +1,14 @@
 const express = require("express");
-require("dotenv").config();
 const app = express();
-app.set('view engine', 'ejs');
-
-const path = require('path')
-app.use('/static', express.static(path.join(__dirname, 'public')))
+// app.set('view engine', 'ejs');
+//
+// const path = require('path')
+// app.use('/static', express.static(path.join(__dirname, 'public')))
 
 
 
 app.get("/", function(req, res) {
-  res.render("portfolio")
+  res.sendFile(__dirname + "/index.html");
 });
 
 
