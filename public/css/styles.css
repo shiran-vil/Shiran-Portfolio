@@ -325,6 +325,10 @@ hr.about-section-btn {
   margin: 40px auto 60px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .form-entry {
   display: block;
   margin: 17px auto;
