@@ -14,6 +14,7 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
    <!-- fontawsome cdn -->
    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
    <link rel="stylesheet" href="public/css/styles.css">
  </head>
 
@@ -133,10 +134,11 @@
    <section id="resume">
      <div class=" skills container-fluid ">
        <h2 class="section-title">Experience</h2>
-       <div class="experience-box">
+       <div class="experience-box expandableCollapsibleDiv">
          <img class="img-responsive-work" src="public/images/suitcase.png" alt="work-icon">
+         <img class="collapse-pic" src="public/images/plus.png" alt="plus">
          <h3 class="little-heading">Research Coordinator in BIU</h3>
-         <ul>
+         <ul class="collapse-content">
            <li>Analyzing data in Excel & Power BI and making presentations of the data. </li>
            <li>POC of QA of the Power Bi of the team.</li>
            <li>Running pilot of building personal website for the researchers. </li>
@@ -145,10 +147,11 @@
          </ul>
          <p class="years-work"><small>2020-2021</small></p>
        </div>
-       <div class="experience-box">
+       <div class="experience-box expandableCollapsibleDiv">
          <img class="img-responsive-work" src="public/images/suitcase.png" alt="work-icon">
+         <img class="collapse-pic" src="public/images/plus.png" alt="plus">
          <h3 class="little-heading">NOC Operator in Gav Systems</h3>
-         <ul>
+         <ul class="collapse-content">
            <li>Responsibility on multiple systems that are operated on WINDOWS or LINUX servers: hardware issues, services, client servers, IPA gateway, reading logs etc.</li>
            <li>Thorough learning of the systems architectures</li>
            <li>Working with farm servers: VMWARE- operating the virtual servers, checking their connection. </li>
@@ -157,12 +160,13 @@
          </ul>
          <p class="years-work"><small>2017-2019</small></p>
        </div>
-       <div class="experience-box">
+       <div class="experience-box expandableCollapsibleDiv">
          <img class="img-responsive-work" src="public/images/suitcase.png" alt="work-icon">
+         <img class="collapse-pic" src="public/images/plus.png" alt="plus">
          <h3 class="little-heading">Military Service
            <small>Assistent at Prime Minister's Office- Major General Tech Unit</small>
          </h3>
-         <ul>
+         <ul class="collapse-content">
            <li>Making presentations.</li>
            <li>Updating data in the systems.</li>
            <li>Making appiontments</li>
@@ -170,17 +174,19 @@
          <p class="years-work"><small>2013-2015</small></p>
        </div>
        <h2 class="section-title"> Professional Knowledge & Education </h2>
-       <div class="experience-box">
+       <div class="experience-box expandableCollapsibleDiv">
          <img class="img-responsive-work" src="public/images/suitcase.png" alt="work-icon">
+         <img class="collapse-pic" src="public/images/plus.png" alt="plus">
          <h3 class="little-heading">Bar Ilan University</h3>
-         <p>BA in English linguistics and school counsling Studies. </p>
+         <p class="collapse-content">BA in English linguistics and school counsling Studies. </p>
          <p class="years-work"><small>2016-2019</small></p>
        </div>
-       <div class="experience-box">
+       <div class="experience-box expandableCollapsibleDiv">
          <img class="img-responsive-work" src="public/images/suitcase.png" alt="work-icon">
+         <img class="collapse-pic" src="public/images/plus.png" alt="plus">
          <h3 class="little-heading">Udemy-The Complete 2022 Web Development Bootcamp</h3>
-         <label>Front-End</label>
-         <ul>
+         <label class="collapse-content">Front-End</label>
+         <ul class="collapse-content">
            <li>HTML 5</li>
            <li>CSS 3</li>
            <li>Bootstrap 5</li>
@@ -188,9 +194,9 @@
            <li>jQuery</li>
            <li>Bash Command Line</li>
            <li>Git, GitHub and Version Control</li>
-         </ul>
-         <label>Back-End</label>
-         <ul>
+         </ul class="collapse-content">
+         <label class="collapse-content">Back-End</label>
+         <ul class="collapse-content">
            <li>Node.js</li>
            <li>Express.js</li>
            <li>APIs</li>
@@ -201,10 +207,11 @@
          </ul>
          <p class="years-work"><small>2021-2022</small></p>
        </div>
-       <div class="experience-box">
+       <div class="experience-box expandableCollapsibleDiv">
          <img class="img-responsive-work" src="public/images/suitcase.png" alt="work-icon">
+         <img class="collapse-pic" src="public/images/plus.png" alt="plus">
          <h3 class="little-heading">Campus IL Self.py</h3>
-         <ul>
+         <ul class="collapse-content">
            <li>Data types</li>
            <li>Loops & Conditionals</li>
            <li>Lists</li>
@@ -213,10 +220,11 @@
          </ul>
          <p class="years-work"><small>2020</small></p>
        </div>
-       <div class="experience-box">
+       <div class="experience-box expandableCollapsibleDiv">
          <img class="img-responsive-work" src="public/images/suitcase.png" alt="work-icon">
+         <img class="collapse-pic" src="public/images/plus.png" alt="plus">
          <h3 class="little-heading">Wordpress from beginner to master by Andrew Williams</h3>
-         <ul>
+         <ul class="collapse-content">
            <li>Building sites by types like a blog.</li>
            <li>How to use themes & plugins.</li>
            <li>How to manage the site by dashboard.</li>
@@ -280,6 +288,21 @@
        $('a').click(function() {
          $('a.nav-link.current').removeClass("current");
          $(this).addClass("current");
+       });
+     });
+
+     $(document).ready(function() {
+       $(".expandableCollapsibleDiv > img").click(function(e) {
+         var showElementDescription =
+           $(this).parents(".expandableCollapsibleDiv").find(".collapse-content");
+
+         if ($(showElementDescription).is(":visible")) {
+           showElementDescription.hide("fast", "swing");
+           $(this).attr("src", "public/images/plus.png");
+         } else {
+           showElementDescription.show("fast", "swing");
+           $(this).attr("src", "public/images/minus.png");
+         }
        });
      });
    </script>
