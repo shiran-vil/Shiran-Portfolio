@@ -4,7 +4,7 @@ body {
 }
 h5 {
   font-family: 'Merriweather', serif;
-  font-size: 90%
+  font-size: 1.5rem;
 }
 h1 {
   color: #4834d4;
@@ -15,11 +15,12 @@ h1 {
 
 h2, h3 {
   font-family: 'Montserrat', cursive;
+  font-size: large;
 }
 
 p {
   line-height: 2;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 hr.about-section-btn {
@@ -43,7 +44,7 @@ hr.about-section-btn {
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Montserrat-Light";
 }
 
@@ -111,8 +112,13 @@ hr.about-section-btn {
 
 .middle-container {
   margin: 50px 0;
+  display: flex;
+  
 }
-
+.card {
+  margin: 2% auto ;
+  
+}
 .bottom-container {
   background-color: #66BFBF;
   padding: 10px 0;
@@ -228,10 +234,7 @@ hr.about-section-btn {
     left: 75%;
     top: 500px;
   }
-  .years-work {
-    left: -60%;
-    bottom: 70px;
-  }
+ 
   .label-left {  left: -25%;  }
   .text-box { position: static; left:-22%;}
 
@@ -271,6 +274,13 @@ hr.about-section-btn {
 
 .card-body {
   background-color: #F8D9D5;
+}
+
+#portfolio img {
+  width: 70%;
+  object-fit: cover;
+  display: block;
+  /* height: 20rem; */
 }
 
 .portfolio-elements-margin {
@@ -330,7 +340,7 @@ hr.about-section-btn {
 
 .years-work {
   position: relative;
-  right: 150px;
+  right: 170px;
   bottom: 70px;
 }
 
